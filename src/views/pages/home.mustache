@@ -1,0 +1,27 @@
+{{>partials/header}}
+<html>
+
+<body>
+
+     <img src="/images/SP.png">
+
+    
+
+    <ul>
+    {{#products}}
+
+    <li> {{title}} - {{price}}</li>
+
+    {{/products}}
+
+    </ul>
+    <hr/>
+
+    <h1>Frases</h1>
+    {{#frases}}
+        <li>{{.}}</li>
+    {{/frases}}
+
+    
+
+{{>partials/footer}}
